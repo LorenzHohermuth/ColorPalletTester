@@ -3,7 +3,7 @@ import SetColors from './SetColors'
 
 export default function Page() {
   return (
-    <div>
+    <div className='text-textColor bg-bgColor'>
         <div className=' bg-bgColor'>bg</div>
         <div className=' bg-secColor'>sec</div>
         <div className=' bg-prColor'>pr</div>

@@ -6,9 +6,9 @@ export default function SetColors(colors) {
     updateColors()
 
     function updateColors() {
-        document.documentElement.style.setProperty('--bgColor', colors[1]);
-        document.documentElement.style.setProperty('--secColor', colors[2]);
-        document.documentElement.style.setProperty('--prColor', colors[3]);
-        document.documentElement.style.setProperty('--textColor', colors[4]);
+        document.documentElement.style.setProperty('--bgColor', colors[0]);
+        document.documentElement.style.setProperty('--secColor', colors[1]);
+        document.documentElement.style.setProperty('--prColor', colors[2]);
+        document.documentElement.style.setProperty('--textColor', colors[3]);
     }
 }

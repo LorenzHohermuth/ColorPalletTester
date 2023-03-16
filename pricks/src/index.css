@@ -1,3 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root{
+    --bgColor: #F6F1F1;
+    --prColor: #19A7CE;
+    --secColor: #146C94;
+    --textColor: #000000;
+}

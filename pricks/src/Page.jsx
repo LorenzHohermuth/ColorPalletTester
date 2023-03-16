@@ -1,21 +1,14 @@
 import { useEffect } from 'react'
 import SetColors from './SetColors'
 
-export default function Page({colors}) {
-
-    useEffect(() => {
-        SetColors(colors={colors})
-    }, colors)
-
-    
-
+export default function Page() {
   return (
     <div>
-        <div id='bg'>bg</div>
-        <div id='sec'>sec</div>
-        <div id='pr'>pr</div>
-        <div id='text'>text</div>
-        <button onClick={() => updateColors()}>OOO</button>
+        <div className=' bg-bgColor'>bg</div>
+        <div className=' bg-secColor'>sec</div>
+        <div className=' bg-prColor'>pr</div>
+        <div className=' text-textColor'>text</div>
     </div>
+
   )
 }

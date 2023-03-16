@@ -1,17 +1,14 @@
 import React from 'react'
 
-export default function SetColors({colors}) {
-    updateColors()
-    
-    function updateColors() {
-        const idArr = ["bg", "sec", "pr", "text"]  
-        for (let i = 0; i < idArr.length; i++) {
-            changeColor(idArr[i], i)
-        }
-    }
+export default function SetColors(colors) {
+    console.log(colors)
 
-    function changeColor(id, colorIndex) {
-        const el = document.getElementById(id)
-        el.style.backgroundColor = colors[colorIndex]
+    updateColors()
+
+    function updateColors() {
+        document.documentElement.style.setProperty('--bgColor', colors[1]);
+        document.documentElement.style.setProperty('--secColor', colors[2]);
+        document.documentElement.style.setProperty('--prColor', colors[3]);
+        document.documentElement.style.setProperty('--textColor', colors[4]);
     }
 }

@@ -1,6 +1,4 @@
-import { useEffect } from 'react'
 import Sidebar from '../components/sidebar'
-import SetColors from '../functions/updateColors'
 
 export default function Page() {
   return (

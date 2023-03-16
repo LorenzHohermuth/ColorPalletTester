@@ -9,6 +9,7 @@ export default function Sidebar() {
       <ColorPicker name="Background Secondary" property="bgSecondary" />
       <ColorPicker name="Text Primary" property="textPrimary" />
       <ColorPicker name="Text Secondary" property="textSecondary" />
+      <div><button>Reset</button></div>
     </aside>
   )
 }

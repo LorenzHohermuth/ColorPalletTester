@@ -6,8 +6,7 @@ export default function ColorPicker({ name, property }) {
   property = "--" + property
 
   // Trim because it takes it with whitespace from index.css e.g. " #000000"
-  //to get --css vars: getComputedStyle(document.documentElement).getPropertyValue(property).trim()
-  const [color, setColor] = useState(localStorage.getItem(property))
+  const [color, setColor] = useState(getComputedStyle(document.documentElement).getPropertyValue(property).trim())
 
   useEffect(() => {
     updateColors(property, color)

@@ -1,3 +1,4 @@
+import { useParams } from 'react-router-dom'
 import Sidebar from '../components/sidebar'
 
 export default function Page() {

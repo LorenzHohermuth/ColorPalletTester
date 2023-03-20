@@ -1,15 +1,16 @@
 import { useEffect, useState } from "react"
 import updateColors from "../functions/updateColors"
+import updateRoute from "../functions/updateRoute"
 
-export default function ColorPicker({ name, property }) {
+export default function ColorPicker({ name, property, colors, index }) {
   // Just for DX so you don't have to pass with "--" in
   property = "--" + property
 
-  // Trim because it takes it with whitespace from index.css e.g. " #000000"
-  const [color, setColor] = useState(getComputedStyle(document.documentElement).getPropertyValue(property).trim())
+  const [color, setColor] = useState("#" + colors[index])
 
   useEffect(() => {
-    updateColors(property, color)
+    updateColors(property, color, colors, index)
+    updateRoute(color, colors, index)
   }, [color])
 
   return (

@@ -7,7 +7,7 @@ export default function Sidebar() {
   colors = colors.split("-")
 
   return (
-    <aside className="h-full min-h-screen bg-bgSecondary p-5 flex flex-col justify-between gap-5">
+    <aside className="h-screen border-r border-black sticky top-0 bg-bgSecondary p-5 flex flex-col justify-between gap-5">
       <div className="flex flex-col gap-5">
         <ColorPicker name="Primary Color" property="primary" colors={colors} index="0" />
         <ColorPicker name="Secondary Color" property="secondary" colors={colors} index="1" />

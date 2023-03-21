@@ -8,6 +8,7 @@ export default function Page() {
         <div className=' bg-secColor'>sec</div>
         <div className=' bg-prColor'>pr</div>
         <div className=' text-textColor'>text</div>
+        <div>test</div>
     </div>
 
   )

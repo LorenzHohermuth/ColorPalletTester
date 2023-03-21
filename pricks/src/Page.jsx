@@ -1,4 +1,5 @@
 import { useParams } from 'react-router-dom'
+import HomeSvg from '../components/HomeSvg'
 import Sidebar from '../components/Sidebar'
 
 export default function Page() {
@@ -23,10 +24,10 @@ export default function Page() {
         </nav>
         {/* Hero */}
         <section id="home">
-          <div className="mx-20 flex px-5 py-40 md:flex-row flex-col items-center">
-            <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+          <div className="mx-20 flex px-5 py-40 lg:flex-row flex-col items-center">
+            <div className="xl:flex-grow lg:w-1/2 xl:pr-24 lg:pr-16 flex flex-col lg:items-start lg:text-left mb-16 lg:mb-0 items-center text-center">
               <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">Before they sold out
-                <br className="hidden lg:inline-block" />readymade gluten
+                <br className="hidden xl:inline-block" />readymade gluten
               </h1>
               <p className="mb-8 leading-relaxed">Copper mug try-hard pitchfork pour-over freegan heirloom neutra air plant cold-pressed tacos poke beard tote bag. Heirloom echo park mlkshk tote bag selvage hot chicken authentic tumeric truffaut hexagon try-hard chambray.</p>
               <div className="flex justify-center">
@@ -34,8 +35,8 @@ export default function Page() {
                 <button className="ml-4 inline-flex text-textPrimary bg-bgSecondary opacity-80 border-0 py-2 px-6 focus:outline-none hover:opacity-100 duration-200 rounded text-lg">Button</button>
               </div>
             </div>
-            <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
-              <img className="object-cover object-center rounded" alt="hero" src="https://dummyimage.com/720x600" />
+            <div className="lg:max-w-lg xl:w-full lg:w-1/2 w-4/6">
+              <HomeSvg />
             </div>
           </div>
         </section>
@@ -205,7 +206,7 @@ export default function Page() {
               <p className="lg:w-2/3 mx-auto leading-relaxed text-base">Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify, subway tile poke farm-to-table. Franzen you probably haven't heard of them.</p>
             </div>
             <div className="flex flex-wrap -m-4">
-              <div className="p-4 lg:w-1/4 md:w-1/2">
+              <div className="p-4 lg:w-1/4 md:w-1/2 m-auto">
                 <div className="h-full flex flex-col items-center text-center">
                   <img alt="team" className="flex-shrink-0 rounded-lg w-full h-56 object-cover object-center mb-4" src="https://dummyimage.com/200x200" />
                     <div className="w-full">
@@ -232,7 +233,7 @@ export default function Page() {
                     </div>
                 </div>
               </div>
-              <div className="p-4 lg:w-1/4 md:w-1/2">
+              <div className="p-4 lg:w-1/4 md:w-1/2 m-auto">
                 <div className="h-full flex flex-col items-center text-center">
                   <img alt="team" className="flex-shrink-0 rounded-lg w-full h-56 object-cover object-center mb-4" src="https://dummyimage.com/201x201" />
                     <div className="w-full">
@@ -259,7 +260,7 @@ export default function Page() {
                     </div>
                 </div>
               </div>
-              <div className="p-4 lg:w-1/4 md:w-1/2">
+              <div className="p-4 lg:w-1/4 md:w-1/2 m-auto">
                 <div className="h-full flex flex-col items-center text-center">
                   <img alt="team" className="flex-shrink-0 rounded-lg w-full h-56 object-cover object-center mb-4" src="https://dummyimage.com/202x202" />
                     <div className="w-full">
@@ -286,7 +287,7 @@ export default function Page() {
                     </div>
                 </div>
               </div>
-              <div className="p-4 lg:w-1/4 md:w-1/2">
+              <div className="p-4 lg:w-1/4 md:w-1/2 m-auto">
                 <div className="h-full flex flex-col items-center text-center">
                   <img alt="team" className="flex-shrink-0 rounded-lg w-full h-56 object-cover object-center mb-4" src="https://dummyimage.com/203x203" />
                     <div className="w-full">

@@ -10,3 +10,7 @@
     --textPrimary: #000000;
     --textSecondary: #7a7a7a;
 }
+
+section {
+    @apply p-5
+}

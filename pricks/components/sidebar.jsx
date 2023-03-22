@@ -1,13 +1,12 @@
 import { useParams } from "react-router-dom";
 import redirectLoader from "../src/redirectLoader";
 import ColorPicker from "./ColorPicker";
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import Menu from "./Menu";
-import Popup from "./Popup";
-import { popout } from "./Popup";
 
 export default function Sidebar() {
   let { colors } = useParams()
+  
   colors = colors.split("-")
   const [menuOpenState, setMenuOpenState] = useState(false)
 
@@ -25,9 +24,8 @@ export default function Sidebar() {
         <a href="/">Reset</a>
         <div>
           <button onClick={() => setMenuOpenState(true)}>Export</button>
-          <Menu state={menuOpenState} func={setMenuOpenState} />
-          < Popup />
-          <button></button>        </div>
+          <Menu state={menuOpenState} func={setMenuOpenState}/>
+        </div>
       </div>
     </aside>
   )

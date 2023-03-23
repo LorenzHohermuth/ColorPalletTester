@@ -2,6 +2,7 @@ import React from 'react'
 import saveToClipboard from '../functions/saveToClipboard'
 import { useEffect } from 'react'
 import hexToRGB from '../functions/hexToRGB'
+import { getCssValue } from '../functions/getCssValue'
 
 export default function Menu({state, func}) {
 
@@ -10,53 +11,52 @@ export default function Menu({state, func}) {
     let rgb
     let tailwind
     useEffect(() => {
-
-    const primary = document.documentElement.style.getPropertyValue('--primary')
-    const secondary = document.documentElement.style.getPropertyValue('--secondary')
-    const primary = document.documentElement.style.getPropertyValue('--primary')
-    const primary = document.documentElement.style.getPropertyValue('--primary')
-    const primary = document.documentElement.style.getPropertyValue('--primary')
-    const primary = document.documentElement.style.getPropertyValue('--primary')
-    
+        let primary = getCssValue('--primary')
+        let secondary = getCssValue('--secondary')
+        let bgPrimary = getCssValue('--bgPrimary')
+        let bgSecondary = getCssValue('--bgSecondary')
+        let textPrimary = getCssValue('--textPrimary')
+        let textSecondary = getCssValue('--textSecondary')
+        
         css = `:root{
-    --primary: #${primary};
-    --secondary: #${colors[1]};
-    --bgPrimary: #${colors[2]};
-    --bgSecondary: #${colors[3]};
-    --textPrimary: #${colors[4]};
-    --textSecondary: #${colors[5]};
+    --primary: ${primary};
+    --secondary: ${secondary};
+    --bgPrimary: ${bgPrimary};
+    --bgSecondary: ${bgSecondary};
+    --textPrimary: ${textPrimary};
+    --textSecondary: ${textSecondary};
 }`
 
-    hex = `#${primary}
-#${colors[1]}
-#${colors[2]}
-#${colors[3]}
-#${colors[4]}
-#${colors[5]}`
+        hex = `${primary}
+${secondary}
+${bgPrimary}
+${bgSecondary}
+${textPrimary}
+${textSecondary}`
 
 
-    rgb = `${hexToRGB(primary)}
-${hexToRGB(colors[1])}
-${hexToRGB(colors[2])}
-${hexToRGB(colors[3])}
-${hexToRGB(colors[4])}
-${hexToRGB(colors[5])}`
+        rgb = `${hexToRGB(primary)}
+${hexToRGB(secondary)}
+${hexToRGB(bgPrimary)}
+${hexToRGB(bgSecondary)}
+${hexToRGB(textPrimary)}
+${hexToRGB(textSecondary)}`
 
-    tailwind = `theme: {
+        tailwind = `theme: {
     extend: {
         colors: {
-            primary: "#${primary}",
-            secondary: "#${colors[1]}",
-            bgPrimary: "#${colors[2]}",
-            bgSecondary: "#${colors[3]}",
-            textPrimary: "#${colors[4]}",
-            textSecondary: "#${colors[5]}",
+            primary: "${primary}",
+            secondary: "${secondary}",
+            bgPrimary: "${bgPrimary}",
+            bgSecondary: "${bgSecondary}",
+            textPrimary: "${textPrimary}",
+            textSecondary: "${textSecondary}",
         },
     },
 },`
 
 
-    }, [document.documentElement.style])
+    }, [getComputedStyle(document.documentElement)])
     
     
 
@@ -68,21 +68,23 @@ ${hexToRGB(colors[5])}`
 
     return (
         <div className={state ? show : 'hidden'}>
-            <div className='bg-bgPrimary rounded-lg'>
-                <div className='flex'>
-                    <button onClick={() => close()}>X</button>
-                    <div>Export</div>
+            <div className=' bg-neutral-100 rounded-lg'>
+                <div className=' border-neutral-300 border-b-2 flex align-baseline'>
+                    <button onClick={() => close()}>
+                        <img src=".\public\close-circle-outline.svg" alt="hello" className='h-5'/>
+                    </button>
+                    <div className='ml-2'>Export</div>
                 </div>
                 <div className='grid grid-cols-3'>
-                    <button onClick={() => {saveToClipboard(window.location.href)
+                    <button className=' h-14 w-24 border-2 m-2 rounded-md border-neutral-300' onClick={() => {saveToClipboard(window.location.href)
                         close()}}>URL</button>
-                    <button onClick={() => {saveToClipboard(css);
+                    <button className=' h-14 w-24 border-2 m-2 rounded-md border-neutral-300' onClick={() => {saveToClipboard(css);
                         close()}}>CSS</button>
-                    <button onClick={() => {saveToClipboard(hex);
+                    <button className=' h-14 w-24 border-2 m-2 rounded-md border-neutral-300' onClick={() => {saveToClipboard(hex);
                         close()}}>HEX</button>
-                    <button onClick={() => {saveToClipboard(rgb);
+                    <button className=' h-14 w-24 border-2 m-2 rounded-md border-neutral-300' onClick={() => {saveToClipboard(rgb);
                         close()}}>RGB</button>
-                    <button onClick={() => {saveToClipboard(tailwind);
+                    <button className=' h-14 w-24 border-2 m-2 rounded-md border-neutral-300' onClick={() => {saveToClipboard(tailwind);
                         close()}}>TAILWIND</button>
                 </div>
             </div> 

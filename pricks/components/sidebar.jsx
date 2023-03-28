@@ -2,7 +2,7 @@ import { useParams } from "react-router-dom";
 import redirectLoader from "../src/redirectLoader";
 import ColorPicker from "./ColorPicker";
 import { useState, useEffect } from "react"
-import Menu from "./Menu";
+import Menu from "./ExportMenu";
 
 export default function Sidebar() {
   let { colors } = useParams()

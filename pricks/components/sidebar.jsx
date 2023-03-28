@@ -11,7 +11,7 @@ export default function Sidebar() {
   const [menuOpenState, setMenuOpenState] = useState(false)
 
   return (
-    <aside className="h-screen w-max border-r border-black sticky top-0 bg-stone-300 p-5 flex flex-col justify-between gap-5">
+    <aside className="h-screen w-max border-r border-neutral-600 sticky top-0 bg-stone-300 p-5 flex flex-col justify-between gap-5">
       <div className="flex flex-col gap-5">
         <p className="text-3xl font-semibold">Colors</p>
         <ColorPicker name="Primary Color" property="primary" colors={colors} index="0" />

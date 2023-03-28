@@ -71,7 +71,7 @@ ${hexToRGB(textSecondary)}`
             <div className=' bg-neutral-100 rounded-lg font-medium'>
                 <div className=' border-neutral-200 border-b-2 flex align-baseline p-3'>
                     <button onClick={() => close()}>
-                        <img src=".\public\close-circle-outline.svg" alt="hello" className='h-5'/>
+                        <img src="close-circle-outline.svg" alt="hello" className='h-5'/>
                     </button>
                     <div className='ml-2'>Export</div>
                 </div>

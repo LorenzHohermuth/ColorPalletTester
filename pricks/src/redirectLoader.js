@@ -26,7 +26,7 @@ export default function redirectLoader() {
                 route += "-" + propertyVal;
             }
         });
-
+        
         return route;
     }
 

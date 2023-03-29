@@ -26,7 +26,7 @@ export default function Page() {
         <section id="home">
           <div className="mx-20 flex px-5 py-40 lg:flex-row flex-col items-center">
             <div className="xl:flex-grow lg:w-1/2 xl:pr-24 lg:pr-16 flex flex-col lg:items-start lg:text-left mb-16 lg:mb-0 items-center text-center">
-              <h1 className="title-font text-textPrimary sm:text-4xl text-3xl mb-4 font-medium text-textPrimary">Before they sold out
+              <h1 className="title-font text-textPrimary sm:text-4xl text-3xl mb-4 font-medium ">Before they sold out
                 <br className="hidden xl:inline-block" />readymade gluten
               </h1>
               <p className="mb-8 leading-relaxed">Copper mug try-hard pitchfork pour-over freegan heirloom neutra air plant cold-pressed tacos poke beard tote bag. Heirloom echo park mlkshk tote bag selvage hot chicken authentic tumeric truffaut hexagon try-hard chambray.</p>
@@ -41,7 +41,7 @@ export default function Page() {
           </div>
         </section>
         {/* About */}
-        <section id="about" className="text-gray-600 body-font text-textSecondary">
+        <section id="about" className=" body-font text-textSecondary">
           <div className="container px-5 py-24 mx-auto">
             <div className="text-center mb-20">
               <h1 className="sm:text-3xl text-2xl font-medium title-font text-textPrimary mb-4">Raw Denim Heirloom Man Braid</h1>
@@ -117,8 +117,8 @@ export default function Page() {
               <div className="lg:w-1/3 sm:w-1/2 p-4">
                 <div className="flex relative">
                   <img alt="gallery" className="absolute inset-0 w-full h-full object-cover object-center" src="https://dummyimage.com/600x360" />
-                  <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
-                    <h2 className="tracking-widest text-sm title-font font-medium text-primary mb-1">THE SUBTITLE</h2>
+                  <div className="px-8 py-10 relative z-10 w-full border-4 border-bgSecondary bg-bgPrimary opacity-0 hover:opacity-100">
+                    <h2 className="tracking-widest text-sm title-font font-medium text-textSecondary mb-1">THE SUBTITLE</h2>
                     <h1 className="title-font text-lg font-medium text-textPrimary mb-3">Shooting Stars</h1>
                     <p className="leading-relaxed">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
                   </div>
@@ -127,8 +127,8 @@ export default function Page() {
               <div className="lg:w-1/3 sm:w-1/2 p-4">
                 <div className="flex relative">
                   <img alt="gallery" className="absolute inset-0 w-full h-full object-cover object-center" src="https://dummyimage.com/601x361" />
-                  <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
-                    <h2 className="tracking-widest text-sm title-font font-medium text-primary mb-1">THE SUBTITLE</h2>
+                  <div className="px-8 py-10 relative z-10 w-full border-4 border-bgSecondary bg-bgPrimary opacity-0 hover:opacity-100">
+                    <h2 className="tracking-widest text-sm title-font font-medium text-textSecondary mb-1">THE SUBTITLE</h2>
                     <h1 className="title-font text-lg font-medium text-textPrimary mb-3">The Catalyzer</h1>
                     <p className="leading-relaxed">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
                   </div>
@@ -137,8 +137,8 @@ export default function Page() {
               <div className="lg:w-1/3 sm:w-1/2 p-4">
                 <div className="flex relative">
                   <img alt="gallery" className="absolute inset-0 w-full h-full object-cover object-center" src="https://dummyimage.com/603x363" />
-                  <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
-                    <h2 className="tracking-widest text-sm title-font font-medium text-primary mb-1">THE SUBTITLE</h2>
+                  <div className="px-8 py-10 relative z-10 w-full border-4 border-bgSecondary bg-bgPrimary opacity-0 hover:opacity-100">
+                    <h2 className="tracking-widest text-sm title-font font-medium text-textSecondary mb-1">THE SUBTITLE</h2>
                     <h1 className="title-font text-lg font-medium text-textPrimary mb-3">The 400 Blows</h1>
                     <p className="leading-relaxed">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
                   </div>
@@ -156,7 +156,7 @@ export default function Page() {
             </div>
             <div className="flex flex-wrap -m-4 text-center">
               <div className="p-4 md:w-1/4 sm:w-1/2 w-full">
-                <div className="border-2 border-gray-200 px-4 py-6 rounded-lg">
+                <div className="border-2 border-textPrimary px-4 py-6 rounded-lg">
                   <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="text-primary w-12 h-12 mb-3 inline-block" viewBox="0 0 24 24">
                     <path d="M8 17l4 4 4-4m-4-5v9"></path>
                     <path d="M20.88 18.09A5 5 0 0018 9h-1.26A8 8 0 103 16.29"></path>
@@ -166,7 +166,7 @@ export default function Page() {
                 </div>
               </div>
               <div className="p-4 md:w-1/4 sm:w-1/2 w-full">
-                <div className="border-2 border-gray-200 px-4 py-6 rounded-lg">
+                <div className="border-2 border-textPrimary px-4 py-6 rounded-lg">
                   <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="text-primary w-12 h-12 mb-3 inline-block" viewBox="0 0 24 24">
                     <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"></path>
                     <circle cx="9" cy="7" r="4"></circle>
@@ -177,7 +177,7 @@ export default function Page() {
                 </div>
               </div>
               <div className="p-4 md:w-1/4 sm:w-1/2 w-full">
-                <div className="border-2 border-gray-200 px-4 py-6 rounded-lg">
+                <div className="border-2 border-textPrimary px-4 py-6 rounded-lg">
                   <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="text-primary w-12 h-12 mb-3 inline-block" viewBox="0 0 24 24">
                     <path d="M3 18v-6a9 9 0 0118 0v6"></path>
                     <path d="M21 19a2 2 0 01-2 2h-1a2 2 0 01-2-2v-3a2 2 0 012-2h3zM3 19a2 2 0 002 2h1a2 2 0 002-2v-3a2 2 0 00-2-2H3z"></path>
@@ -187,7 +187,7 @@ export default function Page() {
                 </div>
               </div>
               <div className="p-4 md:w-1/4 sm:w-1/2 w-full">
-                <div className="border-2 border-gray-200 px-4 py-6 rounded-lg">
+                <div className="border-2 border-textPrimary px-4 py-6 rounded-lg">
                   <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="text-primary w-12 h-12 mb-3 inline-block" viewBox="0 0 24 24">
                     <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
                   </svg>
@@ -211,20 +211,20 @@ export default function Page() {
                   <img alt="team" className="flex-shrink-0 rounded-lg w-full h-56 object-cover object-center mb-4" src="https://dummyimage.com/200x200" />
                     <div className="w-full">
                       <h2 className="title-font font-medium text-lg text-textPrimary">Alper Kamu</h2>
-                      <h3 className="text-gray-500 mb-3">UI Developer</h3>
+                      <h3 className=" mb-3">UI Developer</h3>
                       <p className="mb-4">DIY tote bag drinking vinegar cronut adaptogen squid fanny pack vaporware.</p>
                       <span className="inline-flex">
-                        <a className="text-gray-500">
+                        <a>
                           <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-5 h-5" viewBox="0 0 24 24">
                             <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
                           </svg>
                         </a>
-                        <a className="ml-2 text-gray-500">
+                        <a className="ml-2 ">
                           <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-5 h-5" viewBox="0 0 24 24">
                             <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
                           </svg>
                         </a>
-                        <a className="ml-2 text-gray-500">
+                        <a className="ml-2 ">
                           <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-5 h-5" viewBox="0 0 24 24">
                             <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
                           </svg>
@@ -238,20 +238,20 @@ export default function Page() {
                   <img alt="team" className="flex-shrink-0 rounded-lg w-full h-56 object-cover object-center mb-4" src="https://dummyimage.com/201x201" />
                     <div className="w-full">
                       <h2 className="title-font font-medium text-lg text-textPrimary">Holden Caulfield</h2>
-                      <h3 className="text-gray-500 mb-3">UI Developer</h3>
+                      <h3 className=" mb-3">UI Developer</h3>
                       <p className="mb-4">DIY tote bag drinking vinegar cronut adaptogen squid fanny pack vaporware.</p>
                       <span className="inline-flex">
-                        <a className="text-gray-500">
+                        <a>
                           <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-5 h-5" viewBox="0 0 24 24">
                             <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
                           </svg>
                         </a>
-                        <a className="ml-2 text-gray-500">
+                        <a className="ml-2 ">
                           <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-5 h-5" viewBox="0 0 24 24">
                             <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
                           </svg>
                         </a>
-                        <a className="ml-2 text-gray-500">
+                        <a className="ml-2 ">
                           <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-5 h-5" viewBox="0 0 24 24">
                             <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
                           </svg>
@@ -265,20 +265,20 @@ export default function Page() {
                   <img alt="team" className="flex-shrink-0 rounded-lg w-full h-56 object-cover object-center mb-4" src="https://dummyimage.com/202x202" />
                     <div className="w-full">
                       <h2 className="title-font font-medium text-lg text-textPrimary">Atticus Finch</h2>
-                      <h3 className="text-gray-500 mb-3">UI Developer</h3>
+                      <h3 className=" mb-3">UI Developer</h3>
                       <p className="mb-4">DIY tote bag drinking vinegar cronut adaptogen squid fanny pack vaporware.</p>
                       <span className="inline-flex">
-                        <a className="text-gray-500">
+                        <a>
                           <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-5 h-5" viewBox="0 0 24 24">
                             <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
                           </svg>
                         </a>
-                        <a className="ml-2 text-gray-500">
+                        <a className="ml-2 ">
                           <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-5 h-5" viewBox="0 0 24 24">
                             <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
                           </svg>
                         </a>
-                        <a className="ml-2 text-gray-500">
+                        <a className="ml-2 ">
                           <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-5 h-5" viewBox="0 0 24 24">
                             <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
                           </svg>
@@ -292,20 +292,20 @@ export default function Page() {
                   <img alt="team" className="flex-shrink-0 rounded-lg w-full h-56 object-cover object-center mb-4" src="https://dummyimage.com/203x203" />
                     <div className="w-full">
                       <h2 className="title-font font-medium text-lg text-textPrimary">Henry Letham</h2>
-                      <h3 className="text-gray-500 mb-3">UI Developer</h3>
+                      <h3 className=" mb-3">UI Developer</h3>
                       <p className="mb-4">DIY tote bag drinking vinegar cronut adaptogen squid fanny pack vaporware.</p>
                       <span className="inline-flex">
-                        <a className="text-gray-500">
+                        <a>
                           <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-5 h-5" viewBox="0 0 24 24">
                             <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
                           </svg>
                         </a>
-                        <a className="ml-2 text-gray-500">
+                        <a className="ml-2 ">
                           <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-5 h-5" viewBox="0 0 24 24">
                             <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
                           </svg>
                         </a>
-                        <a className="ml-2 text-gray-500">
+                        <a className="ml-2 ">
                           <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-5 h-5" viewBox="0 0 24 24">
                             <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
                           </svg>
@@ -326,27 +326,27 @@ export default function Page() {
               </svg>
               <span className="ml-3 text-xl">Pricks</span>
             </a>
-            <p className="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">© 2023 Pricks —
+            <p className="text-sm  sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">© 2023 Pricks —
               <a href="https://twitter.com/knyttneve" className="text-textSecondary ml-1" rel="noopener noreferrer" target="_blank">@someone</a>
             </p>
             <span className="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
-              <a className="text-gray-500">
+              <a>
                 <svg fill="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-5 h-5" viewBox="0 0 24 24">
                   <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
                 </svg>
               </a>
-              <a className="ml-3 text-gray-500">
+              <a className="ml-3 ">
                 <svg fill="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-5 h-5" viewBox="0 0 24 24">
                   <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
                 </svg>
               </a>
-              <a className="ml-3 text-gray-500">
+              <a className="ml-3 ">
                 <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-5 h-5" viewBox="0 0 24 24">
                   <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
                   <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
                 </svg>
               </a>
-              <a className="ml-3 text-gray-500">
+              <a className="ml-3 ">
                 <svg fill="currentColor" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="0" className="w-5 h-5" viewBox="0 0 24 24">
                   <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
                   <circle cx="4" cy="4" r="2" stroke="none"></circle>

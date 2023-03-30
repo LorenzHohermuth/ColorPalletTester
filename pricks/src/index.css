@@ -6,11 +6,26 @@
     --primary: #19A7CE;
     --secondary: #146C94;
     --bgPrimary: #FFFFFF;
-    --bgSecondary: #F6F1F1;
+    --bgSecondary: #E9E7E7;
     --textPrimary: #000000;
     --textSecondary: #7a7a7a;
 }
 
 section {
     @apply p-5
+}
+
+
+html {
+    overflow: scroll;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+::-webkit-scrollbar {
+    width: 0;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+}
+/* Optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+    background: #FF0000;
 }

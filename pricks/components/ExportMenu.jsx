@@ -60,7 +60,7 @@ ${hexToRGB(textSecondary)}`
     
     
 
-    const show = 'absolute bg-black bg-opacity-50 top-0 left-0 h-screen w-screen flex justify-center items-center'
+    const show = 'absolute bg-black bg-opacity-50 top-0 left-0 h-screen w-screen flex justify-center items-center z-50'
 
     function close(){
         func(false)

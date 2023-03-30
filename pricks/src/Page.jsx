@@ -31,8 +31,8 @@ export default function Page() {
               </h1>
               <p className="mb-8 leading-relaxed">Copper mug try-hard pitchfork pour-over freegan heirloom neutra air plant cold-pressed tacos poke beard tote bag. Heirloom echo park mlkshk tote bag selvage hot chicken authentic tumeric truffaut hexagon try-hard chambray.</p>
               <div className="flex justify-center">
-                <button className="inline-flex text-white bg-primary border-0 py-2 px-6 opacity-80 focus:outline-none hover:opacity-100 duration-200 rounded text-lg">Button</button>
-                <button className="ml-4 inline-flex text-textPrimary bg-bgSecondary opacity-80 border-0 py-2 px-6 focus:outline-none hover:opacity-100 duration-200 rounded text-lg">Button</button>
+                <button className="inline-flex text-white bg-primary border-0 py-2 px-6 focus:outline-none duration-200 rounded text-lg">Button</button>
+                <button className="ml-4 inline-flex text-textPrimary bg-bgSecondary border-0 py-2 px-6 focus:outline-none duration-200 rounded text-lg">Button</button>
               </div>
             </div>
             <div className="lg:max-w-lg xl:w-full lg:w-1/2 w-4/6">
@@ -103,7 +103,7 @@ export default function Page() {
                 </div>
               </div>
             </div>
-            <button className="flex mx-auto mt-16 text-white bg-primary duration-200 border-0 py-2 px-8 opacity-80 focus:outline-none hover:opacity-100 rounded text-lg">Button</button>
+            <button className="flex mx-auto mt-16 text-white bg-primary duration-200 border-0 py-2 px-8 focus:outline-none rounded text-lg">Button</button>
           </div>
         </section>
         {/* Showcase */}
@@ -115,9 +115,8 @@ export default function Page() {
             </div>
             <div className="flex flex-wrap -m-4">
               <div className="lg:w-1/3 sm:w-1/2 p-4">
-                <div className="flex relative">
-                  <img alt="gallery" className="absolute inset-0 w-full h-full object-cover object-center" src="https://dummyimage.com/600x360" />
-                  <div className="px-8 py-10 relative z-10 w-full border-4 border-bgSecondary bg-bgPrimary opacity-0 hover:opacity-100">
+                <div className="flex ">
+                  <div className="px-8 py-10 w-full border-4 border-bgSecondary bg-bgPrimary">
                     <h2 className="tracking-widest text-sm title-font font-medium text-textSecondary mb-1">THE SUBTITLE</h2>
                     <h1 className="title-font text-lg font-medium text-textPrimary mb-3">Shooting Stars</h1>
                     <p className="leading-relaxed">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
@@ -125,9 +124,8 @@ export default function Page() {
                 </div>
               </div>
               <div className="lg:w-1/3 sm:w-1/2 p-4">
-                <div className="flex relative">
-                  <img alt="gallery" className="absolute inset-0 w-full h-full object-cover object-center" src="https://dummyimage.com/601x361" />
-                  <div className="px-8 py-10 relative z-10 w-full border-4 border-bgSecondary bg-bgPrimary opacity-0 hover:opacity-100">
+                <div className="flex ">
+                  <div className="px-8 py-10 w-full border-4 border-bgSecondary bg-bgPrimary">
                     <h2 className="tracking-widest text-sm title-font font-medium text-textSecondary mb-1">THE SUBTITLE</h2>
                     <h1 className="title-font text-lg font-medium text-textPrimary mb-3">The Catalyzer</h1>
                     <p className="leading-relaxed">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
@@ -135,9 +133,8 @@ export default function Page() {
                 </div>
               </div>
               <div className="lg:w-1/3 sm:w-1/2 p-4">
-                <div className="flex relative">
-                  <img alt="gallery" className="absolute inset-0 w-full h-full object-cover object-center" src="https://dummyimage.com/603x363" />
-                  <div className="px-8 py-10 relative z-10 w-full border-4 border-bgSecondary bg-bgPrimary opacity-0 hover:opacity-100">
+                <div className="flex ">
+                  <div className="px-8 py-10  w-full border-4 border-bgSecondary bg-bgPrimary">
                     <h2 className="tracking-widest text-sm title-font font-medium text-textSecondary mb-1">THE SUBTITLE</h2>
                     <h1 className="title-font text-lg font-medium text-textPrimary mb-3">The 400 Blows</h1>
                     <p className="leading-relaxed">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
@@ -321,9 +318,16 @@ export default function Page() {
         <footer className="text-textSecondary body-font">
           <div className="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
             <a className="flex title-font font-medium items-center md:justify-start justify-center text-textPrimary">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-10 h-10 text-white p-2 bg-primary rounded-full rotate-180" viewBox="0 0 24 24">
-                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
-              </svg>
+              <div className=' bg-primary rounded-full'>
+                <svg className='h-12' version="1.1" fill='var(--bgPrimary)' viewBox="0 0 1200 1200" xmlns="http://www.w3.org/2000/svg">
+                  <g>
+                    <path d="m667.8 696h220.2c25.461 0 49.879-10.113 67.883-28.117 18.004-18.004 28.117-42.422 28.117-67.883 0-101.84-40.457-199.52-112.47-271.53-72.012-72.016-169.68-112.47-271.53-112.47s-199.52 40.457-271.53 112.47c-72.016 72.012-112.47 169.68-112.47 271.53s40.457 199.52 112.47 271.53c72.012 72.016 169.68 112.47 271.53 112.47h28.078c30.711-0.035156 60.148-12.254 81.855-33.973 21.707-21.719 33.91-51.164 33.93-81.871s-12.145-60.168-33.824-81.918l-56.281-56.281 0.003907 0.003907c-3.7109-3.7344-5.793-8.7891-5.7891-14.055 0-5.2656 2.0898-10.312 5.8047-14.043s8.7578-5.8398 14.023-5.8633zm-81.961 101.76 56.281 56.281v-0.003907c3.7109 3.7344 5.793 8.7891 5.7891 14.055s-2.0938 10.312-5.8086 14.043c-3.7148 3.7305-8.7578 5.8398-14.023 5.8633h-28.078c-73.672 0.21875-144.62-27.801-198.27-78.297-53.645-50.496-85.895-119.63-90.121-193.18-4.2266-73.551 19.891-145.93 67.395-202.23 47.504-56.309 114.78-92.273 187.99-100.49 10.961-1.1992 21.977-1.8008 33-1.8008 70.91-0.28125 139.38 25.906 192 73.441 30.191 27 54.344 60.066 70.887 97.039 16.543 36.973 25.098 77.016 25.113 117.52h-220.2c-30.707 0.035156-60.148 12.254-81.855 33.973-21.707 21.719-33.91 51.164-33.93 81.871s12.145 60.168 33.824 81.918z"/>
+                    <path d="m744 456c0 26.508-21.492 48-48 48s-48-21.492-48-48 21.492-48 48-48 48 21.492 48 48"/>
+                    <path d="m552 456c0 26.508-21.492 48-48 48s-48-21.492-48-48 21.492-48 48-48 48 21.492 48 48"/>
+                    <path d="m504 648c0 26.508-21.492 48-48 48s-48-21.492-48-48 21.492-48 48-48 48 21.492 48 48"/>
+                  </g>
+                </svg>
+              </div>
               <span className="ml-3 text-xl">Pricks</span>
             </a>
             <p className="text-sm  sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">© 2023 Pricks —

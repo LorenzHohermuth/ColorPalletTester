@@ -9,7 +9,7 @@ export default function Page() {
       <div className=' text-textSecondary bg-bgPrimary w-full'>
         {/* Navbar */}
         <nav className='h-24'>
-          <div className='h-1 bg-gradient-to-r from-primary to-secondary'></div>
+          <div className='h-2 bg-gradient-to-r from-primary to-secondary'></div>
           <div className='flex items-center justify-between h-[5.75rem] px-12'>
             <div>
               Logo

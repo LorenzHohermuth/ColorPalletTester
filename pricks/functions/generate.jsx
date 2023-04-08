@@ -3,8 +3,6 @@ import updateColors from "../functions/updateColors"
 import { updateFullRoute } from "../functions/updateRoute"
 
 export default function generate(propertyList) {
-    generateColors()
-
     function hslToHex(h, s, l) {
         l /= 100;
         const a = s * Math.min(l, 1 - l) / 100;
@@ -57,6 +55,8 @@ export default function generate(propertyList) {
             updateColors(propertyList[i], e)
         })
 
-        updateFullRoute(colors)
+        return updateFullRoute(colors)
     }
+
+    return generateColors()
 }

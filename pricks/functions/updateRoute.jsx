@@ -5,6 +5,8 @@ export default function updateRoute(color, colors, index) {
     const route = colors.join("-")
 
     window.history.replaceState(null, null, "/" + route )
+
+    return route;
 }
 
 export function updateFullRoute(colors) {
@@ -13,5 +15,7 @@ export function updateFullRoute(colors) {
     })
     const route = colors.join("-")
 
-    window.history.replaceState(null, null, "/" + route )
+    window.history.replaceState(null, null, "/" + route);
+
+    return route;
 }

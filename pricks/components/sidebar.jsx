@@ -1,13 +1,15 @@
 import { useParams } from "react-router-dom";
-import redirectLoader from "../src/redirectLoader";
 import ColorPicker from "./ColorPicker";
-import { useState, useEffect } from "react"
+import { useEffect, useState } from "react"
 import Menu from "./ExportMenu";
+import generate from "../functions/generate";
+import { getPropertiesCss } from "../functions/getProperties";
 
 export default function Sidebar() {
-  let { colors } = useParams()
+  let { colors } = useParams() 
   
   colors = colors.split("-")
+
   const [menuOpenState, setMenuOpenState] = useState(false)
 
   return (
@@ -22,7 +24,12 @@ export default function Sidebar() {
         <ColorPicker name="Text Secondary" property="textSecondary" colors={colors} index="5" />
       </div>
       <div>
-        <a href="/">Reset</a>
+        <div>
+          <button onClick={() => generate(getPropertiesCss())}>Generate</button>
+        </div>
+        <div>
+          <a href="/">Reset</a>
+        </div>
         <div>
           <button onClick={() => setMenuOpenState(true)}>Export</button>
           <Menu state={menuOpenState} func={setMenuOpenState}/>

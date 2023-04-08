@@ -1,14 +1,8 @@
 import { redirect } from "react-router-dom";
+import getProperties from "../functions/getProperties";
 
 export default function redirectLoader() {
-    const properties = [
-        "primary",
-        "secondary",
-        "bgPrimary",
-        "bgSecondary",
-        "textPrimary",
-        "textSecondary",
-    ];
+    const properties = getProperties()
 
     function getDefaultRoute() {
         let route = "/";
@@ -27,6 +21,7 @@ export default function redirectLoader() {
             }
         });
         
+        route += '/'
         return route;
     }
 

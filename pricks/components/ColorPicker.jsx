@@ -9,6 +9,11 @@ export default function ColorPicker({ name, property, colors, index }) {
 
   const [color, setColor] = useState("#" + colors[index])
   
+  // This useEffect is for listening to changes of "colors" state
+  useEffect(() => {
+    setColor("#" + colors[index])
+  }, [colors])
+
   useEffect(() => {
     updateColors(property, color, colors, index)
   }, [color])

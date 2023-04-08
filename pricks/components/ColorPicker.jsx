@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react"
 import updateColors from "../functions/updateColors"
 import updateRoute from "../functions/updateRoute"
-
+import { getCssValue } from "../functions/getCssValue"
 
 export default function ColorPicker({ name, property, colors, index }) {
   // Just for DX so you don't have to pass with "--" in

@@ -6,11 +6,15 @@ import generate from "../functions/generate";
 import { getPropertiesCss } from "../functions/getProperties";
 
 export default function Sidebar() {
-  let { colors } = useParams() 
-  
-  colors = colors.split("-")
+  const params = useParams() 
 
+  const [colors, setColors] = useState(params.colors.split("-"))
   const [menuOpenState, setMenuOpenState] = useState(false)
+
+  function handleGenerate() {
+    const generateRes = generate(getPropertiesCss())
+    setColors(generateRes.split("-"))
+  }
 
   return (
     <aside className="h-screen w-max border-r border-neutral-300 sticky top-0 bg-stone-100 p-5 flex flex-col justify-between gap-5">
@@ -25,7 +29,7 @@ export default function Sidebar() {
       </div>
       <div>
         <div>
-          <button onClick={() => generate(getPropertiesCss())}>Generate</button>
+          <button onClick={() => handleGenerate()}>Generate</button>
         </div>
         <div>
           <a href="/">Reset</a>
